@@ -4,16 +4,16 @@
 
 开箱即用，Robyn 为应用程序提供了以下接口：
 
-- /docs Swagger UI 界面
-- /openapi.json JSON 格式的 OpenAPI 文档
+- `/docs` Swagger UI 界面
+- `/openapi.json` JSON 格式的 OpenAPI 文档
 
-如果您不希望生成 OpenAPI 文档，可以在启动应用程序时传递 --disable-openapi 参数来禁用该功能。
+如果您不希望生成 OpenAPI 文档，可以在启动应用程序时传递 `--disable-openapi` 参数来禁用该功能。
 
 若需要使用自定义的 OpenAPI 配置，您可以：
 
-- 将 openapi.json 配置文件放在应用程序的根目录中。
+- 将 `openapi.json` 配置文件放在应用程序的根目录中。
 
-- 或者，将文件路径作为参数传递给 Robyn() 构造函数中的 openapi_file_path 参数（参数的优先级高于文件）。
+- 或者，将文件路径作为参数传递给 `Robyn()` 构造函数中的 `openapi_file_path` 参数（参数的优先级高于文件）。
 
 ```bash
 python app.py --disable-openapi
@@ -21,7 +21,7 @@ python app.py --disable-openapi
 
 ### [如何使用?](https://robyn.tech/documentation/example_app/openapi#how-to-use)
 
-要使用查询参数类型，您可以通过定义 def get(r: Request, query_params: GetRequestParams) 的方式，其中 GetRequestParams 是 QueryParams 的子类。
+要使用查询参数类型，您可以通过定义 `def get(r: Request, query_params: GetRequestParams)` 的方式，其中 `GetRequestParams` 是 `QueryParams` 的子类。
 
 路径参数默认为字符串类型（参考：[https://en.wikipedia.org/wiki/Query_string](https://en.wikipedia.org/wiki/Query_string)）
 

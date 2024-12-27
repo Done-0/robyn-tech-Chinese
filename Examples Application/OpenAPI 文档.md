@@ -5,6 +5,7 @@
 开箱即用，Robyn 为应用程序提供了以下接口：
 
 - `/docs` Swagger UI 界面
+
 - `/openapi.json` JSON 格式的 OpenAPI 文档
 
 如果您不希望生成 OpenAPI 文档，可以在启动应用程序时传递 `--disable-openapi` 参数来禁用该功能。
@@ -117,7 +118,7 @@ app.include_router(subrouter)
 
 ### [其他规范参数](https://robyn.tech/documentation/example_app/openapi#other-specification-params)
 
-Robyn 支持最新的 OpenAPI 规范 （[https://swagger.io/specification/](https://swagger.io/specification/)） 中提到的所有参数。下是请求和响应体的示例：
+Robyn 支持最新的 OpenAPI 规范（[https://swagger.io/specification/](https://swagger.io/specification/)）中提到的所有参数。下是请求和响应体的示例：
 
 ```python
 from robyn.types import JSONResponse, Body

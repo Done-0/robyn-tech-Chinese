@@ -152,7 +152,7 @@ def create_item(request: Request, body: CreateItemBody) -> CreateResponse:
 
 随着参考文档的成功部署，蝙蝠侠拥有了一个强大的新工具。Robyn 框架为他提供了创建高效打击犯罪应用所需的灵活性、可扩展性和性能，使他在保护哥谭市的持续战斗中获得了技术优势。
 
-### 下一步
+### [下一步](https://robyn.tech/documentation/api_reference/openapi#whats-next)
 
 完成接口文档配置后，蝙蝠侠开始思考如何提升应用程序的并发处理能力。
 
